@@ -1,4 +1,8 @@
-import {GET_WEATHER_SUCCESS, GET_WEATHER_FAILED, WEATHER_FETCH_REQUESTED} from '../actions/actions';
+import {
+  GET_WEATHER_SUCCESS,
+  GET_WEATHER_FAILED,
+  WEATHER_FETCH_REQUESTED,
+} from '../actions/actions';
 
 const initialStatus = {
   code: 100,
@@ -6,7 +10,6 @@ const initialStatus = {
   message: '',
 };
 const weatherReducer = (state = initialStatus, action) => {
-  console.log('action', action);
   switch (action.type) {
     case WEATHER_FETCH_REQUESTED:
       return {

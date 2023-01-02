@@ -16,7 +16,8 @@ const MainStackNavigator = () => {
           options={{
             gestureEnabled: false,
             headerShown: false,
-        }}/>
+          }}
+        />
         <Stack.Screen
           name="WeatherDetails"
           component={WeatherDetails}

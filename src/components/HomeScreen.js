@@ -24,13 +24,10 @@ const HomeScreen = ({navigation}) => {
   const code = useSelector(state => state.weatherReducer.code);
 
   const handleCitySearch = text => {
-    console.log('eventValue', text.nativeEvent.text);
     setSearchedCity(text.nativeEvent.text);
   };
 
   useEffect(() => {
-    // eslint-disable-next-line no-debugger
-    debugger;
     if (code === 200) {
       navigation.navigate('WeatherDetails');
     } else if (code === 400) {
